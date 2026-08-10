@@ -9,21 +9,21 @@
 
 ## Learning Roadmap
 
-| 강의 | 주제                              | 진행 상태 |
-| :--: | --------------------------------- | :-------: |
-|  01  | [HTML 기초](./notes/lecture01.md) |  ✅ 완료  |
-|  02  | CSS 기초                          |  ⏳ 예정  |
-|  03  | CSS 심화                          |  ⏳ 예정  |
-|  04  | CSS 인터랙션                      |  ⏳ 예정  |
-|  05  | JavaScript 기초                   |  ⏳ 예정  |
-|  06  | JavaScript 심화                   |  ⏳ 예정  |
-|  07  | 배열, 객체, 달력, JSON Server     |  ⏳ 예정  |
-|  08  | 비동기 처리와 Fetch API           |  ⏳ 예정  |
-|  09  | React 기초                        |  ⏳ 예정  |
-|  10  | React 심화                        |  ⏳ 예정  |
-|  11  | React Native 기초                 |  ⏳ 예정  |
-|  12  | React Native 스타일링과 레이아웃  |  ⏳ 예정  |
-|  13  | React Native 마무리               |  ⏳ 예정  |
+| 강의 | 주제                              | 진행 상태  |
+| :--: | --------------------------------- | :--------: |
+|  01  | [HTML 기초](./notes/lecture01.md) |  ✅ 완료   |
+|  02  | [CSS 기초](./notes/lecture02.md)  | 🚧 진행 중 |
+|  03  | CSS 심화                          |  ⏳ 예정   |
+|  04  | CSS 인터랙션                      |  ⏳ 예정   |
+|  05  | JavaScript 기초                   |  ⏳ 예정   |
+|  06  | JavaScript 심화                   |  ⏳ 예정   |
+|  07  | 배열, 객체, 달력, JSON Server     |  ⏳ 예정   |
+|  08  | 비동기 처리와 Fetch API           |  ⏳ 예정   |
+|  09  | React 기초                        |  ⏳ 예정   |
+|  10  | React 심화                        |  ⏳ 예정   |
+|  11  | React Native 기초                 |  ⏳ 예정   |
+|  12  | React Native 스타일링과 레이아웃  |  ⏳ 예정   |
+|  13  | React Native 마무리               |  ⏳ 예정   |
 
 ## Repository Structure
 
@@ -39,7 +39,9 @@ KOPO-FE/
 │     └─ index.js
 ├─ notes/
 │  └─ lecture01.md
+│  └─ lecture02.md
 ├─ .gitignore
+├─ .prettierrc
 └─ README.md
 ```
 

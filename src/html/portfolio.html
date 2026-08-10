@@ -4,33 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>시맨틱 포트폴리오</title>
+    <link rel="stylesheet" href="../css/portfolio.css" />
   </head>
   <body>
     <header>
-      <h1>박상욱</h1>
-      <p>FE 개발자 지망생</p>
+      <div class="container">
+        <h1>박상욱</h1>
+        <p>FE 개발자 지망생</p>
+      </div>
     </header>
     <nav>
-      <a href="#about">소개</a>
-      <a href="#skills">기술</a>
-      <a href="#contact">연락처</a>
+      <ul>
+        <li><a href="../index.html">메인</a></li>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#skills">기술</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
     </nav>
     <main>
-      <section id="about">
-        <h2>자기소개</h2>
-        <p>안녕하세요. 저는 홍길동입니다.</p>
-      </section>
-      <section id="skills">
-        <h2>배우고 싶은 기술</h2>
-        <p>HTML / CSS / JavaScript / TypeScript / React / Next.js</p>
-      </section>
-      <section id="contact">
-        <h2>연락처</h2>
-        <p>이메일: deanamu222@naver.com</p>
-      </section>
+      <div class="container">
+        <section id="about">
+          <h2>소개</h2>
+          <p>안녕하세요. 저는 박상욱입니다.</p>
+        </section>
+        <section id="skills">
+          <h2>기술</h2>
+          <p>HTML / CSS / JavaScript / TypeScript / React / Next.js</p>
+        </section>
+        <section id="contact">
+          <h2>연락처</h2>
+          <p>이메일: deanamu222@naver.com</p>
+        </section>
+      </div>
     </main>
     <footer>
-      <p>© 홍길동. All rights reserved.</p>
+      <p>© 박상욱. All rights reserved.</p>
     </footer>
   </body>
 </html>

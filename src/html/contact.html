@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문의하기</title>
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+  <body class="page-wrap">
+    <div class="container">
+      <form class="card">
+        <h1>문의하기</h1>
+        <label for="name">이름</label>
+        <input id="name" name="name" type="text" placeholder="이름을 입력하세요" required />
+        <label for="email">이메일</label>
+        <input id="email" name="email" type="email" placeholder="example@email.com" autocomplete="email" required />
+        <label for="contact">문의 유형</label>
+        <select id="contact" name="contactType">
+          <option value="general">일반 문의</option>
+          <option value="project">프로젝트 제안</option>
+          <option value="collaboration">협업 제안</option>
+          <option value="feedback">피드백</option>
+          <option value="other">기타 문의</option>
+        </select>
+        <label for="message">메시지</label>
+        <textarea id="message" name="message" rows="5" placeholder="내용을 입력하세요" required></textarea>
+        <button type="submit">제출</button>
+      </form>
+    </div>
+  </body>
+</html>

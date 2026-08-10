@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f0f2f5;
+}
+
+.page-wrap {
+  min-height: 100vh;
+  padding: 40px 24px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+  font-size: 24px;
+  padding-bottom: 12px;
+}
+
+.card label {
+  font-size: 14px;
+}
+
+.card input,
+.card select,
+.card textarea {
+  display: block;
+  width: 100%;
+  margin: 2px 0 8px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.card textarea {
+  resize: none;
+}
+
+.card input::placeholder,
+.card textarea::placeholder {
+  color: rgb(185, 185, 185);
+}
+
+.card input:focus,
+.card select:focus,
+.card textarea:focus {
+  border-color: #4a90e2;
+  outline: 1px solid #4a90e2;
+}
+
+.card button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.card button:hover {
+  background-color: #357abd;
+}
