@@ -12,8 +12,8 @@
 | 강의 | 주제                              | 진행 상태  |
 | :--: | --------------------------------- | :--------: |
 |  01  | [HTML 기초](./notes/lecture01.md) |  ✅ 완료   |
-|  02  | [CSS 기초](./notes/lecture02.md)  | 🚧 진행 중 |
-|  03  | CSS 심화                          |  ⏳ 예정   |
+|  02  | [CSS 기초](./notes/lecture02.md)  |  ✅ 완료   |
+|  03  | [CSS 심화](./notes/lecture03.md)  |  ✅ 완료   |
 |  04  | CSS 인터랙션                      |  ⏳ 예정   |
 |  05  | JavaScript 기초                   |  ⏳ 예정   |
 |  06  | JavaScript 심화                   |  ⏳ 예정   |
@@ -30,23 +30,15 @@
 ```text
 KOPO-FE/
 ├─ src/
-│  ├─ index.html
-│  ├─ html/
-│  │  └─ about.html
-│  ├─ css/
-│  │  └─ index.css
-│  └─ js/
-│     └─ index.js
-├─ notes/
-│  └─ lecture01.md
-│  └─ lecture02.md
+│  ├─ html/       # HTML 실습
+│  ├─ css/        # CSS 실습
+│  ├─ js/         # JavaScript 실습
+│  └─ index.html  # 실습 목록
+├─ notes/         # 강의별 학습 노트
 ├─ .gitignore
 ├─ .prettierrc
 └─ README.md
 ```
-
-- `src`: HTML, CSS, JavaScript 실습 코드
-- `notes`: 강의별 학습 내용과 실습 기록
 
 ## Environment
 
