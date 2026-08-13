@@ -14,8 +14,8 @@
 |  01  | [HTML 기초](./notes/lecture01.md) |  ✅ 완료   |
 |  02  | [CSS 기초](./notes/lecture02.md)  |  ✅ 완료   |
 |  03  | [CSS 심화](./notes/lecture03.md)  |  ✅ 완료   |
-|  04  | CSS 인터랙션                      |  ⏳ 예정   |
-|  05  | JavaScript 기초                   |  ⏳ 예정   |
+|  04  | [CSS 인터랙션](./notes/lecture04.md) |  ✅ 완료   |
+|  05  | [JavaScript 기초](./notes/lecture05.md) |  ✅ 완료   |
 |  06  | JavaScript 심화                   |  ⏳ 예정   |
 |  07  | 배열, 객체, 달력, JSON Server     |  ⏳ 예정   |
 |  08  | 비동기 처리와 Fetch API           |  ⏳ 예정   |
@@ -33,6 +33,7 @@ KOPO-FE/
 │  ├─ html/       # HTML 실습
 │  ├─ css/        # CSS 실습
 │  ├─ js/         # JavaScript 실습
+│  ├─ assets/     # 이미지 및 페이지 썸네일
 │  └─ index.html  # 실습 목록
 ├─ notes/         # 강의별 학습 노트
 ├─ .gitignore

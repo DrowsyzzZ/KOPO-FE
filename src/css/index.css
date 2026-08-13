@@ -1,0 +1,99 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: #1f2937;
+  background: #f4f7fb;
+  background-image: radial-gradient(circle at 8% 0%, rgba(86, 113, 255, .16), transparent 28%), radial-gradient(circle at 90% 15%, rgba(32, 193, 166, .12), transparent 23%);
+  font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+}
+
+.archive { width: min(1200px, calc(100% - 48px)); margin: 0 auto; padding: 88px 0 76px; }
+
+.archive-header {
+  position: relative;
+  max-width: 760px;
+  margin-bottom: 52px;
+}
+
+.eyebrow, .card-number {
+  margin: 0;
+  color: #167d91;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+
+h1 {
+  margin: 17px 0 20px;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 750;
+  line-height: 1.08;
+  letter-spacing: -.06em;
+}
+
+.archive-intro { max-width: 520px; margin: 0; color: #65738a; font-size: 16px; line-height: 1.7; }
+
+.practice-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+.practice-card {
+  display: block;
+  overflow: hidden;
+  color: inherit;
+  background: rgba(255, 255, 255, .84);
+  border: 1px solid #dce4ef;
+  border-radius: 18px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(34, 54, 86, .05);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+.practice-card:hover {
+  transform: translateY(-6px);
+  border-color: #8295e9;
+  box-shadow: 0 18px 34px rgba(38, 61, 101, .14);
+}
+
+.card-preview { position: relative; height: 196px; overflow: hidden; border-bottom: 1px solid #e2e8f1; }
+.card-content { min-height: 148px; padding: 20px 21px 22px; }
+.card-content h2 { margin: 8px 0 8px; font-size: 20px; font-weight: 700; letter-spacing: -.035em; }
+.card-content > p:last-child { margin: 0; color: #6c788b; font-size: 13px; line-height: 1.55; }
+
+.preview-profile { background: #eef1f5; }
+.preview-profile img { width: 100%; height: 100%; object-fit: cover; }
+.preview-profile span { position: relative; z-index: 1; color: #dce2ff; font-size: 11px; font-weight: 700; letter-spacing: .14em; }
+.preview-profile i { position: absolute; right: 36px; bottom: 23px; width: 86px; height: 86px; border: 8px solid #62e2c2; border-radius: 50%; }.preview-profile b { position: absolute; bottom: 45px; left: 25px; width: 112px; height: 8px; background: #dce2ff; box-shadow: 0 18px 0 rgba(220, 226, 255, .72), 0 36px 0 rgba(220, 226, 255, .45); }
+
+.preview-portfolio { background: #edf0f3; }
+.preview-portfolio img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+
+.preview-contact { background: #eef1f5; }
+.preview-contact img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+.preview-kbo { background: #eef1f5; }
+.preview-kbo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+.preview-dropdown { background: #fff; }
+.preview-dropdown img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+
+.preview-icons { background: #eef1f5; }
+.preview-icons img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+.preview-lck { display: flex; align-items: center; gap: 18px; padding: 28px; background: linear-gradient(135deg, #07101f, #3a0e22); }.preview-lck img { width: 58px; height: 58px; }.preview-lck span { color: #f0f5ff; font-size: 18px; font-weight: 750; line-height: 1; letter-spacing: -.04em; }
+
+.preview-gallery { background: #111a33; }.preview-gallery img { width: 100%; height: 100%; object-fit: cover; opacity: .78; transition: transform .35s ease, opacity .35s ease; }.practice-card:hover .preview-gallery img { transform: scale(1.06); opacity: .95; }.preview-gallery span { position: absolute; left: 20px; bottom: 18px; color: #fff; font-size: 15px; font-weight: 700; letter-spacing: .08em; }
+
+.preview-overlay { background: #1d2947; }.preview-overlay img { width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: .8; transition: transform .3s ease; }.preview-overlay::after { position: absolute; inset: 0; background: linear-gradient(to bottom, transparent, rgba(10, 20, 43, .86)); content: ""; }.preview-overlay span { position: absolute; z-index: 1; left: 21px; bottom: 19px; color: #fff; font-size: 17px; font-weight: 700; line-height: 1; letter-spacing: .08em; }.practice-card:hover .preview-overlay img { transform: scale(1.06); }
+
+.preview-menu { background: #eef1f5; }
+.preview-menu img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+.preview-calculator { background: #eef1f5; }
+.preview-calculator img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+.preview-window-calculator { background: #eef1f5; }
+.preview-window-calculator img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+@media (max-width: 900px) { .practice-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .archive { width: min(100% - 32px, 1200px); padding: 58px 0; }.archive-header { margin-bottom: 38px; }.practice-grid { grid-template-columns: 1fr; gap: 16px; }.card-preview { height: 182px; } }
