@@ -1,0 +1,82 @@
+:root {
+  --color-primary: #4a90e2;
+  --color-hover: #2266cc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  width: 300px;
+  border-radius: 12px;
+  text-align: center;
+  background: rgb(43, 43, 43);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  min-height: 82px;
+  padding: 10px 16px 12px;
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+}
+
+#calculation {
+  min-height: 18px;
+  text-align: right;
+  font-size: 13px;
+  color: #a9a9a9;
+}
+
+#result {
+  margin-top: 3px;
+  text-align: right;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.grid button {
+  cursor: pointer;
+  aspect-ratio: 3/2.4;
+  border: none;
+  border-radius: 8px;
+  font-size: 22px;
+  line-height: 1;
+  color: white;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.numBtn {
+  background-color: rgb(65, 64, 64);
+}
+
+.calcBtn {
+  background-color: #4a90e2;
+}
+
+.clearBtn,
+.equalBtn {
+  background-color: rgb(138, 137, 137);
+}

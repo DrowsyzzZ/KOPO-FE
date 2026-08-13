@@ -1,0 +1,95 @@
+:root {
+  --color-primary: #4a90e2;
+  --color-hover: #2266cc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.calculator {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.inputs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+select {
+  text-align: center;
+  text-align-last: center;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--color-hover);
+}
+
+#result {
+  margin-top: 16px;
+  font-size: 18px;
+  color: #2c3e50;
+  min-height: 28px;
+}
+
+/* input[type="number"]의 위·아래 화살표 숨기기 */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+/* select 기본 화살표 숨기기 */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: center;
+  text-align-last: center;
+}
