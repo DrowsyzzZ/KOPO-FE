@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  min-width: 100vh;
+  justify-content: center;
+  margin: 48px auto;
+  font-family: sans-serif;
+  background-color: #f0f2f5;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav button {
+  padding: 16px 24px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav button:hover {
+  transform: translateY(-3px);
+  background: #e5e7eb;
+  cursor: pointer;
+}
+
+nav button .icon {
+  font-size: 24px;
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.fa-google {
+  color: #32a350;
+}
+
+.fa-steam {
+  color: #00adef;
+}
