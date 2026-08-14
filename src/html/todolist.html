@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="../css/todolist.css" />
+    <link rel="stylesheet" href="../css/MyHeader.css" />
+    <link rel="stylesheet" href="../css/MyFooter.css" />
+    <script src="../js/todolist.js" defer></script>
+    <script type="module" src="../js/MyHeader.js"></script>
+    <script type="module" src="../js/MyFooter.js"></script>
+  </head>
+
+  <body>
+    <my-header class="todo-header"></my-header>
+
+    <div class="todo">
+      <div class="form">
+        <input id="text" placeholder="할 일을 입력하세요" />
+        <button id="add">추가</button>
+      </div>
+
+      <div class="option">
+        <div class="">
+          <span id="completed-count">완료 </span>
+          <span id="total-count">전체 </span>
+        </div>
+
+        <div id="delete-actions">
+          <button class="delete-completed">완료 삭제</button>
+          <button class="delete-all">전체 삭제</button>
+        </div>
+      </div>
+
+      <ul id="list"></ul>
+      <div id="empty-message" class="empty-message">등록된 할 일이 없습니다.</div>
+    </div>
+
+    <my-footer></my-footer>
+  </body>
+</html>

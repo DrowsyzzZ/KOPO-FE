@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 40px 16px;
+}
+
+.board {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+input,
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card {
+  margin-top: 10px;
+  padding: 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}

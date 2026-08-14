@@ -16,7 +16,7 @@
 |  03  | [CSS 심화](./notes/lecture03.md)  |  ✅ 완료   |
 |  04  | [CSS 인터랙션](./notes/lecture04.md) |  ✅ 완료   |
 |  05  | [JavaScript 기초](./notes/lecture05.md) |  ✅ 완료   |
-|  06  | JavaScript 심화                   |  ⏳ 예정   |
+|  06  | [JavaScript 심화](./notes/lecture06.md) |  ✅ 완료   |
 |  07  | 배열, 객체, 달력, JSON Server     |  ⏳ 예정   |
 |  08  | 비동기 처리와 Fetch API           |  ⏳ 예정   |
 |  09  | React 기초                        |  ⏳ 예정   |

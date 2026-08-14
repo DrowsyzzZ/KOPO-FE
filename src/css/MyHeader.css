@@ -1,0 +1,33 @@
+my-header {
+  display: block;
+  width: 100%;
+}
+
+my-header header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 32px;
+  color: white;
+  background-color: #2c3e50;
+}
+
+my-header h1 {
+  font-size: 20px;
+}
+
+my-header nav {
+  display: flex;
+  gap: 12px;
+}
+
+my-header a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+my-header a:hover {
+  color: #8fc4ff;
+}
