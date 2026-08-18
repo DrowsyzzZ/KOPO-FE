@@ -1,0 +1,14 @@
+{
+  "name": "FE",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DrowsyzzZ/KOPO-FE.git",
+  "author": "kopo23_박상욱 <daenamu222@naver.com>",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "0.17.4"
+  },
+  "scripts": {
+    "start": "json-server --watch db.json"
+  }
+}

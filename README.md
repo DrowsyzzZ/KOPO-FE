@@ -17,7 +17,7 @@
 |  04  | [CSS 인터랙션](./notes/lecture04.md) |  ✅ 완료   |
 |  05  | [JavaScript 기초](./notes/lecture05.md) |  ✅ 완료   |
 |  06  | [JavaScript 심화](./notes/lecture06.md) |  ✅ 완료   |
-|  07  | 배열, 객체, 달력, JSON Server     |  ⏳ 예정   |
+|  07  | [배열, 객체, 달력, JSON Server](./notes/lecture07.md) |  ✅ 완료   |
 |  08  | 비동기 처리와 Fetch API           |  ⏳ 예정   |
 |  09  | React 기초                        |  ⏳ 예정   |
 |  10  | React 심화                        |  ⏳ 예정   |
@@ -36,6 +36,9 @@ KOPO-FE/
 │  ├─ assets/     # 이미지 및 페이지 썸네일
 │  └─ index.html  # 실습 목록
 ├─ notes/         # 강의별 학습 노트
+├─ db.json        # JSON Server 실습 데이터
+├─ package.json   # 프로젝트 명령어 및 의존성
+├─ yarn.lock      # Yarn 의존성 버전 기록
 ├─ .gitignore
 ├─ .prettierrc
 └─ README.md
@@ -46,6 +49,7 @@ KOPO-FE/
 - Node.js
 - Yarn
 - HTML / CSS / JavaScript
+- JSON Server
 - React (예정)
 - React Native (예정)
 
