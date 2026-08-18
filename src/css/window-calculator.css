@@ -30,6 +30,7 @@ body {
 }
 
 .display {
+  overflow: hidden;
   min-height: 82px;
   padding: 10px 16px 12px;
   border-radius: 8px;
@@ -45,10 +46,23 @@ body {
 }
 
 #result {
+  overflow: hidden;
   margin-top: 3px;
   text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 32px;
   line-height: 1.1;
+}
+
+#result.long {
+  font-size: 24px;
+}
+
+#result.error {
+  padding-top: 8px;
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 .grid {

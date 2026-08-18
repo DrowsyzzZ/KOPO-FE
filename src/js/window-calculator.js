@@ -21,8 +21,17 @@ const operatorButtons = document.querySelectorAll('.calcBtn');
 const clearButton = document.querySelector('.clearBtn');
 const equalButton = document.querySelector('.equalBtn');
 
-function showResult(value) {
-  result.textContent = value;
+function formatAnswer(value) {
+  if (Number.isInteger(value)) return String(value);
+  return String(Number(value.toFixed(8)));
+}
+
+function showResult(value, isError = false) {
+  const text = String(value);
+
+  result.textContent = text;
+  result.classList.toggle('error', isError);
+  result.classList.toggle('long', !isError && text.length > 12);
 }
 
 function showCalculation(value) {
@@ -59,14 +68,14 @@ for (let button of operatorButtons) {
       const answer = calculate(firstValue, Number(currentValue), operator);
 
       if (answer === null) {
-        showResult('0으로 나눌 수 없습니다.');
+        showResult('0으로 나눌 수 없습니다.', true);
         currentValue = '0';
         firstValue = null;
         operator = null;
         return;
       }
 
-      currentValue = String(answer);
+      currentValue = formatAnswer(answer);
       showResult(currentValue);
     }
 
@@ -84,10 +93,10 @@ equalButton.addEventListener('click', function () {
   const answer = calculate(firstValue, Number(currentValue), operator);
 
   if (answer === null) {
-    showResult('0으로 나눌 수 없습니다.');
+    showResult('0으로 나눌 수 없습니다.', true);
     currentValue = '0';
   } else {
-    currentValue = String(answer);
+    currentValue = formatAnswer(answer);
     showResult(currentValue);
     showCalculation(calculationText);
   }
