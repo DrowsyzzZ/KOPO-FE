@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>모달</title>
+    <link rel="stylesheet" href="../css/modal.css" />
+    <script src="../js/modal.js" defer></script>
+  </head>
+  <body>
+    <main class="modal-practice">
+      <p class="eyebrow">MODAL</p>
+      <h1>모달 열기</h1>
+      <p class="practice-description">버튼을 누르면 화면 위에 안내 모달이 표시됩니다.</p>
+      <button id="openBtn" type="button">모달 열기</button>
+    </main>
+
+    <div id="backdrop" class="backdrop" role="presentation">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+        <div class="modal-icon" aria-hidden="true">✓</div>
+        <h2 id="modal-title">확인해 주세요</h2>
+        <p id="modal-description">확인 버튼을 누르거나 모달 바깥 영역을 누르면 창이 닫힙니다.</p>
+        <button id="confirmBtn" type="button">확인</button>
+      </div>
+    </div>
+  </body>
+</html>

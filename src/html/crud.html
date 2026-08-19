@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게시판</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/crud/crud-favicon.svg" />
+    <link rel="stylesheet" href="../css/crud.css" />
+    <script src="../js/crud.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#">POST BOARD</a>
+        <p class="header-description">CRUD 게시판 실습</p>
+      </div>
+    </header>
+
+    <main class="board-layout">
+      <section class="board-intro" aria-labelledby="board-title">
+        <p class="eyebrow">COMMUNITY</p>
+        <h1 id="board-title">게시판</h1>
+        <p>새로운 글을 작성하고 등록된 게시글을 확인해 보세요.</p>
+      </section>
+
+      <div class="board-content">
+        <section class="write-panel" aria-labelledby="write-title">
+          <div class="panel-heading">
+            <p class="panel-number">01</p>
+            <div>
+              <h2 id="write-title">새 글 작성</h2>
+              <p>제목과 내용을 입력해 주세요.</p>
+            </div>
+          </div>
+
+          <form id="post-form" class="post-form">
+            <div class="form-field">
+              <label for="post-title">제목</label>
+              <input id="post-title" name="title" type="text" placeholder="제목을 입력하세요" required />
+            </div>
+
+            <div class="form-field">
+              <label for="post-content">내용</label>
+              <textarea id="post-content" name="content" rows="8" placeholder="내용을 입력하세요" required></textarea>
+            </div>
+
+            <button class="submit-button" type="submit">게시글 등록</button>
+          </form>
+        </section>
+
+        <section class="list-panel" aria-labelledby="list-title">
+          <div class="list-heading">
+            <div>
+              <p class="panel-number">02</p>
+              <h2 id="list-title">게시글 목록</h2>
+            </div>
+            <p class="post-count">총 <strong id="post-count"></strong>개의 글</p>
+          </div>
+
+          <div id="post-list" class="post-list" aria-live="polite"></div>
+
+          <p id="empty-message" class="empty-message">아직 등록된 게시글이 없습니다.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <strong>POST BOARD</strong>
+        <p>HTML · CSS · JavaScript CRUD Practice</p>
+      </div>
+    </footer>
+  </body>
+</html>

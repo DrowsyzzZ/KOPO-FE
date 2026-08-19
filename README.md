@@ -18,7 +18,7 @@
 |  05  | [JavaScript 기초](./notes/lecture05.md) |  ✅ 완료   |
 |  06  | [JavaScript 심화](./notes/lecture06.md) |  ✅ 완료   |
 |  07  | [배열, 객체, 달력, JSON Server](./notes/lecture07.md) |  ✅ 완료   |
-|  08  | 비동기 처리와 Fetch API           |  ⏳ 예정   |
+|  08  | [비동기 통신과 브라우저 API](./notes/lecture08.md) |  ✅ 완료   |
 |  09  | React 기초                        |  ⏳ 예정   |
 |  10  | React 심화                        |  ⏳ 예정   |
 |  11  | React Native 기초                 |  ⏳ 예정   |
